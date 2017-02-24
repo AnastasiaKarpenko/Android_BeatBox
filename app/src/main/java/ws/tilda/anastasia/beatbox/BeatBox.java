@@ -11,8 +11,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.google.common.base.Ascii.MAX;
-
 public class BeatBox {
     public static final String TAG = "BeatBox";
 
@@ -55,7 +53,7 @@ public class BeatBox {
                 load(sound);
                 mSounds.add(sound);
             } catch (IOException ioe) {
-                Log.e(TAG, "Coundl not load sound" + filename, ioe);
+                Log.e(TAG, "Could not load sound" + filename, ioe);
             }
         }
     }
