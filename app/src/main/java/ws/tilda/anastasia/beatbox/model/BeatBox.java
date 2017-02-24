@@ -1,4 +1,4 @@
-package ws.tilda.anastasia.beatbox;
+package ws.tilda.anastasia.beatbox.model;
 
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
@@ -30,15 +30,19 @@ public class BeatBox {
 
     public void play(Sound sound) {
         Integer soundId = sound.getSoundId();
-        if(soundId == null) {
+        if (soundId == null) {
             return;
         }
         mSoundPool.play(soundId, 1.0f, 1.0f, 1, 0, 1.0f);
     }
 
+    public void release() {
+        mSoundPool.release();
+    }
+
     private void loadSounds() {
         String[] soundNames;
-        try{
+        try {
             soundNames = mAssets.list(SOUNDS_FOLDER);
             Log.i(TAG, "Found " + soundNames.length + " sounds");
         } catch (IOException ioe) {

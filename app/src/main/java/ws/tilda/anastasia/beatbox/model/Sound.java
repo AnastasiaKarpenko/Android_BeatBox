@@ -1,4 +1,4 @@
-package ws.tilda.anastasia.beatbox;
+package ws.tilda.anastasia.beatbox.model;
 
 public class Sound {
     private String mAssetPath;

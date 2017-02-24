@@ -3,6 +3,10 @@ package ws.tilda.anastasia.beatbox;
 import org.junit.Before;
 import org.junit.Test;
 
+import ws.tilda.anastasia.beatbox.model.BeatBox;
+import ws.tilda.anastasia.beatbox.model.Sound;
+import ws.tilda.anastasia.beatbox.viewmodel.SoundViewModel;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.mockito.Mockito.mock;
@@ -29,7 +33,7 @@ public class SoundViewModelTest {
 
     @Test
     public void callsBeatBoxPlayOnButtonClicked() {
-        mSubject.onButtonCLicked();
+        mSubject.onButtonClicked();
 
         verify(mBeatBox).play(mSound);
     }

@@ -1,9 +1,12 @@
-package ws.tilda.anastasia.beatbox;
+package ws.tilda.anastasia.beatbox.viewmodel;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 
-public class SoundViewModel extends BaseObservable{
+import ws.tilda.anastasia.beatbox.model.BeatBox;
+import ws.tilda.anastasia.beatbox.model.Sound;
+
+public class SoundViewModel extends BaseObservable {
     private Sound mSound;
     private BeatBox mBeatBox;
 
@@ -25,7 +28,10 @@ public class SoundViewModel extends BaseObservable{
         notifyChange();
     }
 
-    public void onButtonCLicked() {
+    public void onButtonClicked() {
         mBeatBox.play(mSound);
     }
+
+
+
 }

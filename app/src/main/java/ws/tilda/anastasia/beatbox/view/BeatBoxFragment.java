@@ -1,4 +1,4 @@
-package ws.tilda.anastasia.beatbox;
+package ws.tilda.anastasia.beatbox.view;
 
 
 import android.databinding.DataBindingUtil;
@@ -13,6 +13,10 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
+import ws.tilda.anastasia.beatbox.model.BeatBox;
+import ws.tilda.anastasia.beatbox.R;
+import ws.tilda.anastasia.beatbox.model.Sound;
+import ws.tilda.anastasia.beatbox.viewmodel.SoundViewModel;
 import ws.tilda.anastasia.beatbox.databinding.FragmentBeatBoxBinding;
 import ws.tilda.anastasia.beatbox.databinding.ListItemSoundBinding;
 
@@ -43,6 +47,12 @@ public class BeatBoxFragment extends Fragment {
 
         return binding.getRoot();
 
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        mBeatBox.release();
     }
 
     private class SoundHolder extends RecyclerView.ViewHolder {
