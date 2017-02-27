@@ -3,16 +3,23 @@
         xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="viewModel"
             type="ws.tilda.anastasia.beatbox.viewmodel.SoundViewModel"/>
     </data>
 
-    <Button
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:onClick="@{() -> viewModel.onButtonClicked()}"
-        android:text="@{viewModel.title}"
-        tools:text="Sound name"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <Button
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:onClick="@{() -> viewModel.onButtonClicked()}"
+            android:text="@{viewModel.title}"
+            tools:text="Sound name"/>
+    </FrameLayout>
+
+
 </layout>
