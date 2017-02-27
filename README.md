@@ -10,6 +10,6 @@ In this project I learned:
 - Modifying styles and themes
 - Creating custom drawables (shape drawables, state list drawables, layer list drawables
 
-Screenshot:
+Screenshot for phones:
 
 ![alt tab] (https://github.com/AnastasiaKarpenko/BeatBox/blob/master/BeatBox_screenshot.png)
