@@ -12,4 +12,4 @@ In this project I learned:
 
 Screenshot:
 
-![alt tab] (https://github.com/AnastasiaKarpenko/BeatBox/blob/master/BeatBox_screenshot.png)
+![alt tag](https://github.com/AnastasiaKarpenko/BeatBox/blob/master/BeatBox_screenshot.png)
